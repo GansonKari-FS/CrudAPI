@@ -25,8 +25,11 @@ db.on(`error`, (error) => console.error(error));
 db.once(`open`, () => console.log(`Database connection established`));
 
 app.use(express.json());
-app.use("/students", studentRouter);
+app.use("/api/v1/students", studentRouter);
+
+app.use(express.static(path.join(_dirname, `../reactjs/build`)))
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
