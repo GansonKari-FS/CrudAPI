@@ -6,6 +6,7 @@
   "author": "",
   "type": "commonjs",
   "main": "index.js",
+  "proxy": "http://localhost:8000",
   "scripts": {
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
