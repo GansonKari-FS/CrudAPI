@@ -1,0 +1,22 @@
+GET http://localhost:8000/students
+
+###
+
+GET http://localhost:8000/students/1234
+
+
+###
+
+POST http://localhost:8000/students
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "class": "DWA"
+}
+
+###
+
+DELETE http://localhost:8000/students/1234
+
+
